@@ -1,0 +1,37 @@
+league: turkey_super_lig
+league_name_pretty: 'Turkish Super Lig'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/turkey_s_per_lig/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/turkey_s_per_lig/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/turkey_s_per_lig/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/turkey_s_per_lig/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/turkey_s_per_lig/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/turkey_s_per_lig/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/turkey_s_per_lig/Datasets/Clean_Sheet_Dataset.csv
+country: TUR
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2014/2015:  21
+  2015/2016:  20
+  2016/2017:  19
+  2017/2018:  175
+  2018/2019:  1614
+  2019/2020:  2648
+  2020/2021:  4840
+  2021/2022:  6125
+  2022/2023:  7768
+  2023/2024:  9913
+  2024/2025:  12641

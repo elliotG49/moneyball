@@ -1,0 +1,29 @@
+league: europe_uefa_europa_conference_league
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: ''
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/europe_uefa_europa_conference_league/Datasets/Clean_Sheet_Dataset.csv
+country: EUR
+league_type: interleague
+domestic_value: 1
+competition_ids:
+  2021/2022:  7322
+  2022/2023:  7480
+  2023/2024:  9600
+  2024/2025:  12278

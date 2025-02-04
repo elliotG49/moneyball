@@ -1,0 +1,37 @@
+league: finland_veikkausliiga
+league_name_pretty: 'Finnish Veikkausliiga'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/finland_veikkausliiga/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/finland_veikkausliiga/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/finland_veikkausliiga/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/finland_veikkausliiga/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/finland_veikkausliiga/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/finland_veikkausliiga/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/finland_veikkausliiga/Datasets/Clean_Sheet_Dataset.csv
+country: FIN
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2014/2015:  60
+  2015/2016:  72
+  2016/2017:  59
+  2017/2018:  58
+  2018/2019:  1191
+  2019/2020:  1874
+  2020/2021:  3645
+  2021/2022:  5477
+  2022/2023:  7120
+  2023/2024:  8935
+  2024/2025:  11120

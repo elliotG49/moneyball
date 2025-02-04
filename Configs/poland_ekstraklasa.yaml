@@ -1,0 +1,39 @@
+league: poland_ekstraklasa
+league_name_pretty: 'Polish Ekstraklasa'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/poland_ekstraklasa/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/poland_ekstraklasa/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/poland_ekstraklasa/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/poland_ekstraklasa/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/poland_ekstraklasa/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/poland_ekstraklasa/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/poland_ekstraklasa/Datasets/Clean_Sheet_Dataset.csv
+country: POL
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2011/2012:  3975
+  2012/2013:  3973
+  2013/2014:  257
+  2014/2015:  279
+  2015/2016:  256
+  2016/2017:  278
+  2017/2018:  255
+  2018/2019:  1589
+  2019/2020:  2328
+  2020/2021:  4760
+  2021/2022:  5948
+  2022/2023:  7428
+  2023/2024:  9553
+  2024/2025:  12120

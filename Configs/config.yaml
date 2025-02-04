@@ -1,0 +1,97 @@
+mongodb:
+  uri: "mongodb://localhost:27017/"
+  database: "footballDB"
+  matches_collection: "matches"
+  teams_collection: "teams"
+
+paths:
+  log_file: "/root/barnard/logs/masseys_method.log"
+  top_division_overall_output_file: "/root/barnard/elo/data/massey-data/overall_average_goal_diffs.csv"
+  overall_average_goal_diffs_file: "/root/barnard/elo/data/massey-data/overall_average_goal_diffs.csv"
+  combined_ids_csv: "/root/barnard/data/betting/usefuls/all-leagues.csv"
+  lower_division_overall_output_file: "/root/barnard/elo/data/massey-data/lower_leagues_overall_average_goal_diffs.csv"
+  league_ratings_output_file: "/root/barnard/elo/data/league-ratings/league_ratings.csv"
+
+masseys_method:
+  bin_size: 50      # ELO gap bin size
+  max_gap: 500      # Maximum ELO gap to consider
+  batch_size: 10
+  inter_league_competition_ids: [
+      158,
+      157,
+      6,
+      247,
+      1534,
+      2202,
+      4655,
+      5977,
+      7455,
+      9543,
+      157,
+      6,
+      247,
+      1534,
+      2202,
+      4655,
+      5977,
+      7455,
+      9543,
+      7322,
+      7480,
+      9600,
+      12278,
+      6731,
+      1700,
+      964,
+      1535,
+      2203,
+      4693,
+      6218,
+      7985,
+      1035,
+      1034,
+      1033,
+      1674,
+      2414,
+      4803,
+      6068,
+      7836,
+      1049,
+      1048,
+      1047,
+      1675,
+      2215,
+      4780,
+      7470,
+      7579,
+      9574,
+
+  ] 
+  top_di,vision_competition_ids: [
+    4105, 7, 5, 4, 3, 177, 1636, 4392, 4673, 6192, 7664, 9655, 12529,  # bundesliga-1
+    38, 37, 36, 35, 34, 171, 1677, 2319, 4944, 6211, 7665, 9665, 12316,  # la-liga
+    4127, 67, 66, 75, 65, 180, 1508, 2392, 4505, 6019, 7500, 9674, 12337,  # ligue-1
+    4226, 54, 53, 52, 51, 178, 1585, 2272, 4746, 5951, 7482, 9653, 12322,  # netherlands-league-1
+    246, 12, 11, 10, 9, 161, 1625, 2012, 4759, 6135, 7704, 9660, 12325,  # premier-league
+    223, 169, 168, 167, 2, 164, 1600, 2361, 4478, 5992, 7494, 9636, 12455,  # scottish-premiership
+    3945, 71, 70, 69, 68, 182, 1680, 2588, 4889, 6198, 7608, 9697, 12530,  # serie-a
+    4195, 4168, 4131, 85, 84, 83, 188, 1578, 4388, 4676, 6020, 7499, 9656, 12528,  # bundesliga-2
+    3141, 27, 26, 25, 22, 165, 1624, 2187, 4912, 6089, 7593, 9663, 12451,  # efl-championship
+    3950, 31, 30, 29, 28, 166, 1564, 2191, 4845, 6017, 7570, 9582, 12446,  # efl-league-1
+    4164, 76, 74, 73, 181, 1579, 2396, 4645, 6018, 7501, 9621, 12338,  # ligue-2
+    4236, 4228, 57, 56, 55, 179, 1584, 2273, 4748, 5950, 7484, 9654, 12317,  # netherlands-league-2
+    43, 42, 41, 40, 39, 172, 1670, 2415, 4842, 6120, 7592, 9675, 12467,  # segunda-division
+    81, 80, 79, 78, 77, 183, 1749, 2642, 4972, 6205, 7864, 9808, 12621,  # serie-b
+    17, 14, 13, 173, 1593, 2321, 4885, 6117, 7731, 9984, 12931,  # liga-nos
+    4284, 966, 965, 174, 1594, 2320, 4886, 6116, 7732, 9704, 12585  # liga-pro
+  ]
+  lower_division_competition_ids: [
+    4195, 4168, 4131, 85, 84, 83, 188, 1578, 4388, 4676, 6020, 7499, 9656, 12528,  # bundesliga-2
+    3141, 27, 26, 25, 22, 165, 1624, 2187, 4912, 6089, 7593, 9663, 12451,  # efl-championship
+    3950, 31, 30, 29, 28, 166, 1564, 2191, 4845, 6017, 7570, 9582, 12446,  # efl-league-1
+    4164, 76, 74, 73, 181, 1579, 2396, 4645, 6018, 7501, 9621, 12338,  # ligue-2
+    4236, 4228, 57, 56, 55, 179, 1584, 2273, 4748, 5950, 7484, 9654, 12317,  # netherlands-league-2
+    43, 42, 41, 40, 39, 172, 1670, 2415, 4842, 6120, 7592, 9675, 12467,  # segunda-division
+    81, 80, 79, 78, 77, 183, 1749, 2642, 4972, 6205, 7864, 9808, 12621,  # serie-b
+    4284, 966, 965, 174, 1594, 2320, 4886, 6116, 7732, 9704, 12585  # liga-pro
+  ]

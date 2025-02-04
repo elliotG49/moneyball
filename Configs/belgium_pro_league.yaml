@@ -1,0 +1,36 @@
+league: belgium_pro_league
+league_name_pretty: 'Belgian Pro League'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/belgium_pro_league/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/belgium_pro_league/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/belgium_pro_league/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/belgium_pro_league/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/belgium_pro_league/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/belgium_pro_league/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/belgium_pro_league/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/belgium_pro_league/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/belgium_pro_league/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/belgium_pro_league/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/belgium_pro_league/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/belgium_pro_league/Datasets/Clean_Sheet_Dataset.csv
+country: BEL
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2015/2016: 112
+  2016/2017: 82
+  2017/2018: 184
+  2018/2019: 1537
+  2019/2020: 2262
+  2020/2021: 4567
+  2021/2022: 6079
+  2022/2023: 7544
+  2023/2024: 9577
+  2024/2025: 12137

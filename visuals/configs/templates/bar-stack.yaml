@@ -1,0 +1,87 @@
+type: bar
+title: "Team Goal Composition"
+subtitle: "Highest Scorer vs. The Rest (Horizontal, per team color)"
+
+xAxisLabel: "Goals"
+yAxisLabel: "Teams"
+
+# An array of teams, each with:
+#   name:   "Chelsea", "Arsenal", etc.
+#   highest: numeric goals for the top scorer
+#   rest:    numeric goals by all other players
+#   color:   a base color in HEX (or any format you prefer) for that team
+teams:
+  - name: "Manchester City"
+    highest: 25
+    rest: 30
+    color: "#36A2EB"
+
+  - name: "Liverpool"
+    highest: 18
+    rest: 22
+    color: "#36A2EB"
+
+  - name: "Arsenal"
+    highest: 20
+    rest: 21
+    color: "#36A2EB"
+
+  - name: "Tottenham"
+    highest: 15
+    rest: 23
+    color: "#36A2EB"
+
+  - name: "Chelsea"
+    highest: 10
+    rest: 19
+    color: "#36A2EB"
+
+  - name: "Manchester City"
+    highest: 25
+    rest: 30
+    color: "#36A2EB"
+
+  - name: "Liverpool"
+    highest: 18
+    rest: 22
+    color: "#36A2EB"
+
+  - name: "Arsenal"
+    highest: 20
+    rest: 21
+    color: "#36A2EB"
+
+  - name: "Tottenham"
+    highest: 15
+    rest: 23
+    color: "#36A2EB"
+
+  - name: "Chelsea"
+    highest: 10
+    rest: 19
+    color: "#36A2EB"
+
+  - name: "Manchester City"
+    highest: 25
+    rest: 30
+    color: "#36A2EB"
+
+  - name: "Liverpool"
+    highest: 18
+    rest: 22
+    color: "#36A2EB"
+
+  - name: "Arsenal"
+    highest: 20
+    rest: 21
+    color: "#36A2EB"
+
+  - name: "Tottenham"
+    highest: 15
+    rest: 23
+    color: "#36A2EB"
+
+  - name: "Chelsea"
+    highest: 10
+    rest: 19
+    color: "#36A2EB"

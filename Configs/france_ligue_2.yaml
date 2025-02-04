@@ -1,0 +1,39 @@
+league: france_ligue_2
+league_name_pretty: 'French Ligue 2'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/france_ligue_2/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/france_ligue_2/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/france_ligue_2/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/france_ligue_2/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/france_ligue_2/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/france_ligue_2/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/france_ligue_2/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/france_ligue_2/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/france_ligue_2/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/france_ligue_2/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/france_ligue_2/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/france_ligue_2/Datasets/Clean_Sheet_Dataset.csv
+country: FRA
+league_type: domestic
+domestic_value: 2
+competition_ids:
+  2012/2013:  4185
+  2013/2014:  4164
+  2014/2015:  76
+  2015/2016:  74
+  2016/2017:  73
+  2017/2018:  181
+  2018/2019:  1579
+  2019/2020:  2396
+  2020/2021:  4645
+  2021/2022:  6018
+  2022/2023:  7501
+  2023/2024:  9621
+  2024/2025:  12338

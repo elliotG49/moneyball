@@ -1,0 +1,39 @@
+league: sweden_allsvenskan
+league_name_pretty: 'Swedish Allsvenkan'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/sweden_allsvenskan/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/sweden_allsvenskan/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/sweden_allsvenskan/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/sweden_allsvenskan/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/sweden_allsvenskan/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/sweden_allsvenskan/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/sweden_allsvenskan/Datasets/Clean_Sheet_Dataset.csv
+country: SWE
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2011/2012:  4315
+  2013/2014:  4307
+  2014/2015:  107
+  2015/2016:  106
+  2016/2017:  105
+  2017/2018:  104
+  2018/2019:  994
+  2019/2020:  1848
+  2020/2021:  3703
+  2021/2022:  5505
+  2022/2023:  7064
+  2023/2024:  8737
+  2024/2025:  10969

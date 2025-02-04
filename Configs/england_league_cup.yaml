@@ -1,0 +1,39 @@
+league: england_league_cup
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/england_league_cup/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_league_cup/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_league_cup/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/england_league_cup/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_league_cup/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_league_cup/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/england_league_cup/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_league_cup/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_league_cup/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: ''
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/england_league_cup/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_league_cup/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_league_cup/Datasets/Clean_Sheet_Dataset.csv
+country: UNK
+league_type: interleague
+domestic_value: 1
+competition_ids:
+  2011/2012:  4080
+  2012/2013:  4076
+  2013/2014:  1051
+  2014/2015:  1050
+  2015/2016:  1049
+  2016/2017:  1048
+  2017/2018:  1047
+  2018/2019:  1675
+  2019/2020:  2215
+  2020/2021:  4780
+  2021/2022:  7470
+  2022/2023:  7579
+  2023/2024:  9574
+  2024/2025:  12473

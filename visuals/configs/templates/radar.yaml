@@ -1,0 +1,39 @@
+type: "radar"
+title: "Comparison of Three Teams"
+subtitle: "Shots, Assists, Tackles per Game"
+
+# Each axis: name, min, max
+indicators:
+  - name: "Shots"
+    min: 0
+    max: 20
+  - name: "Assists"
+    min: 0
+    max: 10
+  - name: "Tackles"
+    min: 0
+    max: 15
+  - name: "Yellow Cards"
+    min: 0
+    max: 12
+  - name: "Red Cards"
+    min: 0
+    max: 8
+
+# We can choose circle or polygon
+radarShape: "polygon"
+
+# Optional: define the ring colors for the background
+ringColors:
+  - "#2b2b2b"
+  - "#3a3a3a"
+
+datasets:
+  - label: "Team A"
+    values: [7, 2, 9, 6, 2]
+    lineColor: "rgba(0, 102, 255,1)"       # outline color for polygon
+    fillColor: "rgba(0, 102, 255,0.5)"     # inside fill
+  - label: "Team C"
+    values: [19, 5, 10, 4, 6]
+    lineColor: "rgba(255, 34, 0,1)"
+    fillColor: "rgba(255, 34, 0,0.5)"

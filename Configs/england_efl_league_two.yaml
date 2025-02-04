@@ -1,0 +1,36 @@
+league: england_efl_league_two
+league_name_pretty: 'English EFL League Two'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/england_efl_league_two/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_efl_league_two/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_efl_league_two/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/england_efl_league_two/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_efl_league_two/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_efl_league_two/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/england_efl_league_two/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_efl_league_two/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_efl_league_two/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/england_efl_league_two/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_efl_league_two/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_efl_league_two/Datasets/Clean_Sheet_Dataset.csv
+country: UNK
+league_type: domestic
+domestic_value: 4
+competition_ids:
+  2015/2016:  33
+  2016/2017:  32
+  2017/2018:  170
+  2018/2019:  1574
+  2019/2020:  2192
+  2020/2021:  4844
+  2021/2022:  6015
+  2022/2023:  7574
+  2023/2024:  9581
+  2024/2025:  12422

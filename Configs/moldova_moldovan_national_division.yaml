@@ -1,0 +1,35 @@
+league: moldova_moldovan_national_division
+league_name_pretty: 'Moldovan National Division'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/moldova_moldovan_national_division/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/moldova_moldovan_national_division/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/moldova_moldovan_national_division/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/moldova_moldovan_national_division/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/moldova_moldovan_national_division/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/moldova_moldovan_national_division/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/moldova_moldovan_national_division/Datasets/Clean_Sheet_Dataset.csv
+country: MDA
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2016/2017:  2058
+  2017/2018:  2057
+  2018/2019:  2056
+  2019/2020:  4437
+  2020/2021:  4775
+  2021/2022:  5949
+  2022/2023:  9163
+  2023/2024:  9754
+  2024/2025:  12344

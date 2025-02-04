@@ -1,0 +1,15 @@
+metric_name,indicator,importance,team_style_induced
+assists_per_90_overall,positive,medium,False
+detailed.key_passes_per_90_overall,positive,low,False
+detailed.interceptions_per_90_overall,positive,medium,False
+detailed.cross_completion_rate_overall,positive,low,False
+conceded_per_90_overall,negative,medium,False
+detailed.pass_completion_rate_overall,positive,medium,False
+detailed.blocks_per_90_overall,positive,medium,False
+detailed.pen_committed_per_90_overall,negative,low,False
+detailed.fouls_committed_per_90_overall,negative,medium,False
+detailed.duels_won_per_90_overall,positive,high,False
+detailed.dispossesed_per_90_overall,negative,high,False
+detailed.accurate_crosses_per_90_overall,positive,medium,False
+goals_per_90_overall,positive,medium,False
+clean_sheets_per_overall,positive,medium,False

@@ -1,0 +1,39 @@
+league: england_community_shield
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/england_community_shield/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_community_shield/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_community_shield/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/england_community_shield/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_community_shield/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_community_shield/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/england_community_shield/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/england_community_shield/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/england_community_shield/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: ''
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/england_community_shield/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/england_community_shield/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/england_community_shield/Datasets/Clean_Sheet_Dataset.csv
+country: UNK
+league_type: interleague
+domestic_value: 1
+competition_ids:
+- 3876
+- 3875
+- 3874
+- 3873
+- 3872
+- 3871
+- 3870
+- 1626
+- 2196
+- 4657
+- 5962
+- 7348
+- 9541
+- 12036

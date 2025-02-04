@@ -1,0 +1,6 @@
+myenv/
+logs/
+api-update/api.py
+api-update/pushover.py
+api.py
+visuals/node_modules/

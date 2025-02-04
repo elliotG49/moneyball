@@ -1,0 +1,46 @@
+'matches_all_gameweeks':
+
+Description: Retrieves all matches for all game-weeks within a specified league.
+
+Usage: <script> config-league-name
+
+----------------------------------
+
+'matches_next_gameweek':
+
+Description: Retrieves all matches for the current, most recent and next game-week within a specified league. It also gets any games classified as game-week 0 (API Relevant).
+
+Usage: <script> config-league-name
+
+----------------------------------
+
+'players_advanced':
+
+Description: Retrieves all datapoints for each player within a specified league or team. This will retrieve all stats for all competitions (all seasons).
+
+Usage: <script> -p {PLAYER-ID} -t {TEAM-ID} -l {config-league-name}
+
+----------------------------------
+
+'players_basic_info':
+
+Description: Retrieves basic datapoints for each player within a specified league. This is competition specified, so only one season per request.
+
+Usage: <script> --season {str-season} {config-league-name}
+
+----------------------------------
+
+'update_teams':
+
+Description: Retrieves all datapoints for each team within a specified league. This is competition specified, so only one season per request.
+
+Usage: <script> -t {TEAM-ID} -l {config-league-name}
+
+----------------------------------
+
+'profile-aqquisition/main':
+
+Description: Scores players by certain pre-defined metrics listed within a CSV. This is done per position -> 'Full Back' , 'Centre-Back' etc. An CL argument can be passed to scrape wikipedia pages to show their 'true' position within the CSV/Excel. 
+
+Usage: <script> -p
+

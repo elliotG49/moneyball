@@ -1,0 +1,13 @@
+type: pie
+
+title: "Card Distribution"
+subtitle: "Team A - 2023/24 Season"
+
+# data: an array of slices in the pie
+data:
+  - label: "Yellow Cards"
+    value: 40
+  - label: "Red Cards"
+    value: 5
+  - label: "No Cards"
+    value: 55

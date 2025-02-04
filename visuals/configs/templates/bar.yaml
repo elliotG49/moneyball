@@ -1,0 +1,28 @@
+type: bar
+
+title: "Team Goals"
+subtitle: "Season 2023/2024"
+
+xAxisLabel: "Team Name"
+yAxisLabel: "Goals"
+
+categories:
+  - "Manchester City"
+  - "Liverpool"
+  - "Arsenal"
+  - "Tottenham"
+  - "Chelsea"
+
+values:
+  - 50
+  - 20
+  - 41
+  - 38
+  - 29
+
+barColors:
+  - "rgba(255,0,0,0.8)"    # for Man City
+  - "rgba(0,255,0,0.8)"    # for Liverpool
+  - "rgba(0,0,255,0.8)"    # for Arsenal
+  - "rgba(255,165,0,0.8)"  # for Tottenham
+  - "rgba(128,0,128,0.8)"  # for Chelsea

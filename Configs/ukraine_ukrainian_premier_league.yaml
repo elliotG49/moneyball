@@ -1,0 +1,38 @@
+league: ukraine_ukrainian_premier_league
+league_name_pretty: 'Ukrainian Premier League'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/ukraine_ukrainian_premier_league/Datasets/Clean_Sheet_Dataset.csv
+country: UKR
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2013/2014:  364
+  2014/2015:  363
+  2015/2016:  362
+  2016/2017:  361
+  2017/2018:  360
+  2018/2019:  1618
+  2019/2020:  2317
+  2020/2021:  4751
+  2021/2022:  5943
+  2022/2023:  8222
+  2023/2024:  9699
+  2024/2025:  12483

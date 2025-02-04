@@ -1,0 +1,38 @@
+league: slovakia_super_liga
+league_name_pretty: 'Slovakian Super Liga'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/slovakia_super_liga/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/slovakia_super_liga/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/slovakia_super_liga/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/slovakia_super_liga/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/slovakia_super_liga/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/slovakia_super_liga/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/slovakia_super_liga/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/slovakia_super_liga/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/slovakia_super_liga/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/slovakia_super_liga/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/slovakia_super_liga/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/slovakia_super_liga/Datasets/Clean_Sheet_Dataset.csv
+country: SVK
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2013/2014:  441
+  2014/2015:  440
+  2015/2016:  439
+  2016/2017:  448
+  2017/2018:  447
+  2018/2019:  1606
+  2019/2020:  2256
+  2020/2021:  4572
+  2021/2022:  5944
+  2022/2023:  7958
+  2023/2024:  9671
+  2024/2025:  12944

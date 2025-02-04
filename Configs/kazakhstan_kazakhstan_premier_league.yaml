@@ -1,0 +1,37 @@
+league: kazakhstan_kazakhstan_premier_league
+league_name_pretty: 'Kazakhstan Premier League'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/kazakhstan_kazakhstan_premier_league/Datasets/Clean_Sheet_Dataset.csv
+country: KAZ
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2014/2015:  1143
+  2015/2016:  1142
+  2016/2017:  1141
+  2017/2018:  1140
+  2018/2019:  1988
+  2019/2020:  1896
+  2020/2021:  3688
+  2021/2022:  5617
+  2022/2023:  7128
+  2023/2024:  8953
+  2024/2025:  11279

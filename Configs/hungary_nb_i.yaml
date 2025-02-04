@@ -1,0 +1,38 @@
+league: hungary_nb_i
+league_name_pretty: 'Hungarian Nemzeti Bajnoksag'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/hungary_nb_i/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/hungary_nb_i/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/hungary_nb_i/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/hungary_nb_i/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/hungary_nb_i/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/hungary_nb_i/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/hungary_nb_i/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/hungary_nb_i/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/hungary_nb_i/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/hungary_nb_i/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/hungary_nb_i/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/hungary_nb_i/Datasets/Clean_Sheet_Dataset.csv
+country: HUN
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2013/2014:  728
+  2014/2015:  731
+  2015/2016:  727
+  2016/2017:  726
+  2017/2018:  730
+  2018/2019:  1566
+  2019/2020:  2282
+  2020/2021:  4534
+  2021/2022:  5936
+  2022/2023:  7967
+  2023/2024:  10007
+  2024/2025:  12334

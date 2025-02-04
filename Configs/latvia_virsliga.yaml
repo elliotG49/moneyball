@@ -1,0 +1,38 @@
+league: latvia_virsliga
+league_name_pretty: 'Latvian Virsliga'
+predictions_pathways:
+  Match_Result: /root/barnard/ML/Models/latvia_virsliga/Datasets/MR_2425_Prediction_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/latvia_virsliga/Datasets/BTTS_FTS_2425_Prediction_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/latvia_virsliga/Datasets/CS_2425_Prediction_Dataset.csv
+training_model_pathways:
+  Match_Result: /root/barnard/ML/Models/latvia_virsliga/Training-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/latvia_virsliga/Training-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/latvia_virsliga/Training-Results/Clean-Sheet
+prediction_metrics_pathway:
+  Match_Result: /root/barnard/ML/Models/latvia_virsliga/Prediction-Results/Match-Result
+  BTTS_FTS: /root/barnard/ML/Models/latvia_virsliga/Prediction-Results/BTTS-FTS
+  Clean_Sheet: /root/barnard/ML/Models/latvia_virsliga/Prediction-Results/Clean-Sheet
+prediction_model_pathway:
+  Match_Result: "/root/barnard/ML/Models/combined_leagues/Training-Results/Match-Result/v6-ionised-ect-rs42/v6-ionised-ect-rs42.joblib"
+  BTTS_FTS: ''
+  Clean_Sheet: ''
+training_dataset_pathway:
+  Match_Result: /root/barnard/ML/Models/latvia_virsliga/Datasets/MR_Dataset.csv
+  BTTS_FTS: /root/barnard/ML/Models/latvia_virsliga/Datasets/BTTS_FTS_Dataset.csv
+  Clean_Sheet: /root/barnard/ML/Models/latvia_virsliga/Datasets/Clean_Sheet_Dataset.csv
+country: LVA
+league_type: domestic
+domestic_value: 1
+competition_ids:
+  2013/2014:  206
+  2014/2015:  205
+  2015/2016:  204
+  2016/2017:  203
+  2017/2018:  202
+  2018/2019:  1171
+  2019/2020:  1930
+  2020/2021:  3566
+  2021/2022:  5622
+  2022/2023:  7132
+  2023/2024:  9043
+  2024/2025:  11280
