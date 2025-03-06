@@ -20,7 +20,6 @@ client = MongoClient('localhost', 27017)
 db = client.footballDB  # Replace with your database name
 collection = db.matches  # Replace with your collection name
 
-
 def get_max_game_week(competition_id):
     """
     Query MongoDB for the maximum game_week value for the specified competition_id.
@@ -45,7 +44,6 @@ def get_max_game_week(competition_id):
         logging.error(f"Error fetching max game week for competition_id {competition_id}: {e}")
         return None
 
-
 def get_match_ids_for_game_week(competition_id, game_week):
     """
     Returns a list of match_ids for a given competition_id and game_week from the database.
@@ -68,7 +66,6 @@ def get_match_ids_for_game_week(competition_id, game_week):
         logging.error(f"An error occurred while fetching match_ids for competition_id {competition_id} game_week {game_week}: {e}")
         return []
 
-
 def fetch_and_insert_data(match_ids):
     """
     Fetch detailed data for each match_id from the API and insert/update into MongoDB.
@@ -87,7 +84,6 @@ def fetch_and_insert_data(match_ids):
             logging.error(f"JSON decode error for match {match_id}: {json_err}")
         except Exception as e:
             logging.error(f"Unexpected error fetching data for match {match_id}: {e}")
-
 
 def insert_document(data, collection):
     """
@@ -118,15 +114,43 @@ def insert_document(data, collection):
     else:
         match_id = match_data.get('id', 'unknown') if match_data else 'unknown'
         logging.error(
-            f"Document for match_id {match_id} is missing 'id' or 'season' "
-            "or does not contain a valid 'data' object, skipping..."
+            f"Document for match_id {match_id} is missing 'id' or 'season' or does not contain a valid 'data' object, skipping..."
         )
 
+def fetch_league_matches_for_competition(competition_id):
+    """
+    Uses the league-matches API endpoint to retrieve all match IDs for the given competition.
+    """
+    base_url = f'https://api.football-data-api.com/league-matches?key={KEY}&season_id={competition_id}&include=stats'
+    all_matches = []
+    current_page = 1
+
+    while True:
+        league_matches_url = f'{base_url}&page={current_page}'
+        logging.info(f"Fetching league matches from URL: {league_matches_url}")
+        response = requests.get(league_matches_url)
+        if response.status_code == 200:
+            data = response.json()
+            matches = data.get('data', [])
+            all_matches.extend(matches)
+            pager = data.get('pager', {})
+            max_page = pager.get('max_page', current_page)
+            if current_page >= max_page:
+                break
+            current_page += 1
+        else:
+            logging.error(f"Error fetching league matches: {response.status_code}")
+            break
+
+    logging.info(f"Fetched {len(all_matches)} match entries from league endpoint for competition_id {competition_id}")
+    # Extract and return match IDs
+    match_ids = [match['id'] for match in all_matches if 'id' in match]
+    return match_ids
 
 def process_yaml_config(league_name):
     """
-    Processes the YAML config file, retrieves the max game week from the DB,
-    then iterates over all game weeks (from 0 to max_gw) to fetch and insert data.
+    Processes the YAML config file, retrieves the competition ID for 2024/2025,
+    then either iterates over game weeks (if matches exist) or uses the league-matches endpoint to fetch match IDs.
     """
     try:
         # Base directory for YAML config files
@@ -149,27 +173,32 @@ def process_yaml_config(league_name):
             competition_id = competition_id_2425
             logging.info(f"Processing league {league} with competition ID {competition_id} for 2024/2025 season")
 
-            # Step 1: Find the maximum game week from the matches collection
+            # Step 1: Check if there are existing matches by retrieving the max game week
             max_game_week = get_max_game_week(competition_id)
 
-            if max_game_week is None:
-                logging.info(f"No maximum game week found for competition_id {competition_id}. No data to process.")
-                return
-
-            # Step 2: Iterate through all game weeks from 0 to max_game_week
-            logging.info(f"Processing all game weeks up to {max_game_week} for competition_id {competition_id}.")
-            for gw in range(0, max_game_week + 1):
-                logging.info(f"Processing game_week {gw} for competition_id {competition_id}")
-                match_ids = get_match_ids_for_game_week(competition_id, gw)
+            if max_game_week is not None:
+                # Process by iterating through game weeks if matches exist in the DB
+                logging.info(f"Found matches in DB. Processing game weeks from 0 to {max_game_week} for competition_id {competition_id}.")
+                for gw in range(0, max_game_week + 1):
+                    logging.info(f"Processing game_week {gw} for competition_id {competition_id}")
+                    match_ids = get_match_ids_for_game_week(competition_id, gw)
+                    if match_ids:
+                        logging.info(f"Fetching and updating data for competition_id {competition_id}, game_week {gw}")
+                        fetch_and_insert_data(match_ids)
+                    else:
+                        logging.info(f"No match_ids found for competition_id {competition_id} game_week {gw}")
+            else:
+                # No matches in DB: use the league-matches endpoint to retrieve match IDs
+                logging.info(f"No matches found in DB for competition_id {competition_id}. Using league endpoint to fetch match IDs.")
+                match_ids = fetch_league_matches_for_competition(competition_id)
                 if match_ids:
-                    logging.info(f"Fetching and updating data for competition_id {competition_id}, game_week {gw}")
+                    logging.info(f"Fetching and updating detailed data for {len(match_ids)} match IDs from league endpoint.")
                     fetch_and_insert_data(match_ids)
                 else:
-                    logging.info(f"No match_ids found for competition_id {competition_id} game_week {gw}")
+                    logging.info(f"No match IDs retrieved from league endpoint for competition_id {competition_id}.")
 
     except Exception as e:
         logging.error(f"An error occurred while processing the config file {config_file}: {e}")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process YAML config file for football data update.')
