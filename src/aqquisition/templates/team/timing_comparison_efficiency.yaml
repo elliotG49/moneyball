@@ -1,0 +1,9 @@
+goals_scored_0_10: stats.goals_scored_min_0_to_10
+goals_conceded_0_10: stats.goals_conceded_min_0_to_10
+goals_scored_76_90: goals_scored_min_76_to_90_home
+goals_conceded_76_90: goals_conceded_min_76_to_90_home
+shots_per_goal: stats.shots_per_goals_scored_overall
+exact_goals_0: stats.exact_team_goals_0_ft_overall
+exact_goals_1: stats.exact_team_goals_1_ft_overall
+exact_goals_2: stats.exact_team_goals_2_ft_overall
+exact_goals_3: stats.exact_team_goals_3_ft_overall

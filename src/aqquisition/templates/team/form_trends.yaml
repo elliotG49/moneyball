@@ -1,0 +1,6 @@
+recent_form: stats.additional_info.formRun_overall
+leading_at_half_percentage: stats.leadingAtHTPercentage_overall
+half_time_goals_scored: stats.scoredGoalsHT_overall
+win_percentage: stats.winPercentage_overall
+draw_percentage: stats.drawPercentage_overall
+loss_percentage: stats.losePercentage_overall

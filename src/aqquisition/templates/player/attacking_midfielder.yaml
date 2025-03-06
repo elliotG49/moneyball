@@ -6,8 +6,6 @@ duels won: detailed.duels_won_per_90_overall
 dispossessed: detailed.dispossesed_per_90_overall
 accurate crosses: detailed.accurate_crosses_per_90_overall
 successful dribbles: detailed.dribbles_successful_per_90_overall
-goals per 90: goals_per_90_overall
-assists per 90: assists_per_90_overall
 fouls drawn: detailed.fouls_drawn_per_90_overall
 cards: cards_per_90_overall
 goals: goals_overall

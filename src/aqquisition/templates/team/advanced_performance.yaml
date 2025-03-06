@@ -1,0 +1,7 @@
+expected_goals_for: stats.xg_for_avg_overall
+expected_goals_against: stats.xg_against_avg_overall
+shot_conversion_rate: stats.shot_conversion_rate_overall
+shots_per_goal: stats.shots_per_goals_scored_overall
+possession_overall: stats.possessionAVG_overall
+attacks_average: stats.attacks_avg_overall
+dangerous_attacks_average: stats.dangerous_attacks_avg_overall

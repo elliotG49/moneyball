@@ -1,0 +1,8 @@
+total_corners: stats.cornersTotal_overall
+corners_average: stats.cornersTotalAVG_overall
+total_freekicks: stats.freekicks_total_num_overall
+freekicks_average: stats.freekicks_total_avg_overall
+total_cards: stats.cardsTotal_overall
+fouls_average: stats.foulsAVG_overall
+penalties_conceded: stats.penalties_conceded_overall
+penalties_won: stats.penalties_won_overall

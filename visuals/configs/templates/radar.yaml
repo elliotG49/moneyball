@@ -1,5 +1,5 @@
 type: "radar"
-title: "Comparison of Dominik Szoboszlai and Martin Ødegaard (2024/2025)"
+title: "Comparison of Dominik Szoboszlai and Enzo Fernández (2024/2025)"
 subtitle: "Various Metrics per Game"
 
 # Each axis: name, min, max
@@ -12,7 +12,7 @@ indicators:
     max: 100
   - name: "Duels Won"
     min: 0
-    max: 5
+    max: 6
   - name: "Accurate Crosses"
     min: 0
     max: 1
@@ -24,7 +24,7 @@ indicators:
     max: 2
   - name: "Goals"
     min: 0
-    max: 5
+    max: 6
   - name: "Assists"
     min: 0
     max: 5
@@ -37,12 +37,15 @@ ringColors:
   - "#2b2b2b"
   - "#3a3a3a"
 
+# Optional: define the text color
+textColor: "#000000"
+
 datasets:
   - label: "Dominik Szoboszlai 2024/2025"
-    values: [2.01, 86.38, 4.15, 0.69, 0.9, 0.83, 3, 2]
+    values: [1.83, 85.7, 3.81, 0.54, 0.79, 0.84, 5, 3]
     lineColor: "rgba(255, 0, 0,1)"       # brighter outline color for polygon
     fillColor: "rgba(255, 0, 0,0.3)"     # dimmer inside fill
-  - label: "Martin Ødegaard 2024/2025"
-    values: [2.46, 87.91, 3.29, 0.82, 1.05, 1.05, 1, 3]
+  - label: "Enzo Fernández 2024/2025"
+    values: [2.39, 84.72, 5.28, 0.69, 0.78, 1.65, 4, 4]
     lineColor: "rgba(0, 191, 255,1)"     # brighter outline color for polygon
     fillColor: "rgba(0, 191, 255,0.3)"   # dimmer inside fill

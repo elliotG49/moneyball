@@ -1,0 +1,7 @@
+possession_overall: stats.possessionAVG_overall
+throwins_total: stats.throwins_total_num_overall
+throwins_average: stats.throwins_total_avg_overall
+corners_earned_first_half: stats.corners_earned_1h_num_overall
+corners_earned_second_half: stats.corners_earned_2h_num_overall
+attacks_average: stats.attacks_avg_overall
+dangerous_attacks_average: stats.dangerous_attacks_avg_overall

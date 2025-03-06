@@ -59,9 +59,12 @@ def main():
             print("No team found for this id/competition combination.\n")
             continue
         
-        # Print the team's "known_as" name
-        known_as = team_doc.get("known_as", "N/A")
-        print(f"Known as: {known_as}")
+        # Print the team's "team_name" name
+        team_name = team_doc.get("CleanName", "N/A")
+        season = team_doc.get("season", "N/A")
+        print(f"Season: {season}")
+        print(f"Known as: {team_name}")
+        
         
         # Loop through each datapoint specified in the YAML template
         for friendly_name, field_spec in template.items():
