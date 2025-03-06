@@ -10,7 +10,7 @@ from api import KEY  # Ensure that 'api.py' contains the 'KEY' variable
 
 # Set up logging
 logging.basicConfig(
-    filename='/root/moneybal;/logs/manual_import.log',  # Log file path
+    filename='/root/moneyball/logs/manual_import.log',  # Log file path
     level=logging.INFO,  # Logging level
     format='%(asctime)s - %(levelname)s - %(message)s'  # Log message format
 )
