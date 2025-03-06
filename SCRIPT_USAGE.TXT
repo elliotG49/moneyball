@@ -44,3 +44,10 @@ Description: Scores players by certain pre-defined metrics listed within a CSV. 
 
 Usage: <script> -p
 
+----------------------------------
+
+'calcaulate-elos.py':
+
+Description: Calcaulates every teams' ELO's within a specified country code.
+
+Usage: <script> {COUNTRY-CODE}
