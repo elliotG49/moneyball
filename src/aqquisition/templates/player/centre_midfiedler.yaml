@@ -1,0 +1,14 @@
+interceptions: detailed.interceptions_per_90_overall
+aerial duels won: detailed.aerial_duels_won_per_90_overall
+duels won: detailed.duels_won_per_90_overall
+conceded: conceded_per_90_overall
+pass completion rate: detailed.pass_completion_rate_overall
+cards: cards_per_90_overall
+fouls committed: detailed.fouls_committed_per_90_overall
+dribbled past: detailed.dribbled_past_per_90_overall
+dispossessed: detailed.dispossesed_per_90_overall
+goals: goals_per_90_overall
+key passes: detailed.key_passes_per_90_overall
+assists: assists_per_90_overall
+successful dribbles: detailed.dribbles_successful_per_90_overall
+tackles: detailed.tackles_per_90_overall

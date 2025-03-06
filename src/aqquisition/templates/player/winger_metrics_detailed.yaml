@@ -1,0 +1,12 @@
+accurate crosses: detailed.accurate_crosses_per_90_overall
+key passes: detailed.key_passes_per_90_overall
+assists: assists_per_90_overall
+pass completion rate: detailed.pass_completion_rate_overall
+goals: goals_per_90_overall
+shot accuracy: detailed.shot_accuraccy_percentage_overall
+shot conversion rate: detailed.shot_conversion_rate_overall
+successful dribbles: detailed.dribbles_successful_per_90_overall
+fouls drawn: detailed.fouls_drawn_per_90_overall
+dribbles: detailed.dribbles_per_90_overall
+xG: detailed.xg_per_90_overall
+xA: detailed.xa_per_90_overall

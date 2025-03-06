@@ -1,0 +1,14 @@
+assists: assists_per_90_overall
+key passes: detailed.key_passes_per_90_overall
+interceptions: detailed.interceptions_per_90_overall
+cross completion rate: detailed.cross_completion_rate_overall
+conceded: conceded_per_90_overall
+pass completion rate: detailed.pass_completion_rate_overall
+blocks: detailed.blocks_per_90_overall
+penalties committed: detailed.pen_committed_per_90_overall
+fouls committed: detailed.fouls_committed_per_90_overall
+duels won: detailed.duels_won_per_90_overall
+dispossessed: detailed.dispossesed_per_90_overall
+accurate crosses: detailed.accurate_crosses_per_90_overall
+goals: goals_per_90_overall
+clean sheets: clean_sheets_per_overall

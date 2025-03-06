@@ -65,7 +65,7 @@ function createRadarChart(config) {
         lineStyle: {
           // Subtle lines, you could adjust to match dark style
           color: 'rgba(255,255,255,0.2)',
-          width: 1.5, // Slightly thicker for clarity
+          width: 2, // Slightly thicker for clarity
           
         }
       },
@@ -79,7 +79,7 @@ function createRadarChart(config) {
       name: {
         show: true,
         color: '#fff',    // axis label color
-        fontSize: 20
+        fontSize: 40
       }
     },
 
@@ -88,14 +88,14 @@ function createRadarChart(config) {
         type: 'radar',
         // Show all vertices and label each with numeric value
         showAllSymbol: true,
-        symbolSize: 10,
+        symbolSize: 20,
 
         label: {
           show: true,
           // '{c}' = just the numeric value for that dimension
           formatter: '{c}',
-          color: '#fff',
-          fontSize: 20
+          color: '#FFF',
+          fontSize: 30
         },
 
         // Map each dataset to ECharts format

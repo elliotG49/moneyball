@@ -1,24 +1,33 @@
 type: "radar"
-title: "Comparison of Three Teams"
-subtitle: "Shots, Assists, Tackles per Game"
+title: "Comparison of Dominik Szoboszlai and Martin Ødegaard (2024/2025)"
+subtitle: "Various Metrics per Game"
 
 # Each axis: name, min, max
 indicators:
-  - name: "Shots"
+  - name: "Key Passes"
     min: 0
-    max: 20
+    max: 3
+  - name: "Pass Completion Rate"
+    min: 0
+    max: 100
+  - name: "Duels Won"
+    min: 0
+    max: 5
+  - name: "Accurate Crosses"
+    min: 0
+    max: 1
+  - name: "Successful Dribbles"
+    min: 0
+    max: 2
+  - name: "Fouls Drawn"
+    min: 0
+    max: 2
+  - name: "Goals"
+    min: 0
+    max: 5
   - name: "Assists"
     min: 0
-    max: 10
-  - name: "Tackles"
-    min: 0
-    max: 15
-  - name: "Yellow Cards"
-    min: 0
-    max: 12
-  - name: "Red Cards"
-    min: 0
-    max: 8
+    max: 5
 
 # We can choose circle or polygon
 radarShape: "polygon"
@@ -29,11 +38,11 @@ ringColors:
   - "#3a3a3a"
 
 datasets:
-  - label: "Team A"
-    values: [7, 2, 9, 6, 2]
-    lineColor: "rgba(0, 102, 255,1)"       # outline color for polygon
-    fillColor: "rgba(0, 102, 255,0.5)"     # inside fill
-  - label: "Team C"
-    values: [19, 5, 10, 4, 6]
-    lineColor: "rgba(255, 34, 0,1)"
-    fillColor: "rgba(255, 34, 0,0.5)"
+  - label: "Dominik Szoboszlai 2024/2025"
+    values: [2.01, 86.38, 4.15, 0.69, 0.9, 0.83, 3, 2]
+    lineColor: "rgba(255, 0, 0,1)"       # brighter outline color for polygon
+    fillColor: "rgba(255, 0, 0,0.3)"     # dimmer inside fill
+  - label: "Martin Ødegaard 2024/2025"
+    values: [2.46, 87.91, 3.29, 0.82, 1.05, 1.05, 1, 3]
+    lineColor: "rgba(0, 191, 255,1)"     # brighter outline color for polygon
+    fillColor: "rgba(0, 191, 255,0.3)"   # dimmer inside fill

@@ -60,6 +60,8 @@ def main():
             continue
         
         # Print the player's "known_as" field
+        season = player_doc.get("season", "N/A")
+        print(f"Season: {season}")
         known_as = player_doc.get("known_as", "N/A")
         print(f"Known as: {known_as}")
         
