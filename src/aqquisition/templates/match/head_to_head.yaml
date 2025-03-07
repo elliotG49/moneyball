@@ -1,0 +1,10 @@
+  team_a_win_home: h2h.previous_matches_results.team_a_win_home
+  team_a_win_away: h2h.previous_matches_results.team_a_win_away
+  team_b_win_home: h2h.previous_matches_results.team_b_win_home
+  team_b_win_away: h2h.previous_matches_results.team_b_win_away
+  draws: h2h.previous_matches_results.draw
+  team_a_wins: h2h.previous_matches_results.team_a_wins
+  team_b_wins: h2h.previous_matches_results.team_b_wins
+  total_matches: h2h.previous_matches_results.totalMatches
+  team_a_win_percent: h2h.previous_matches_results.team_a_win_percent
+  team_b_win_percent: h2h.previous_matches_results.team_b_win_percent

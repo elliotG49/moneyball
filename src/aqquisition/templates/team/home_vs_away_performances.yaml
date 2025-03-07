@@ -1,10 +1,10 @@
 goals_conceded_average_home: stats.seasonConcededAVG_home
-clean_sheets_home: stats.seasonCS_home
-fouls_against_average_home: stats.foulsAVG_home
-cards_against_home: stats.cards_against_home
-goals_scored_home: stats.seasonScoredNum_home
 goals_conceded_average_away: stats.seasonConcededAVG_away
+clean_sheets_home: stats.seasonCS_home
 clean_sheets_away: stats.seasonCS_away
+fouls_against_average_home: stats.foulsAVG_home
 fouls_against_average_away: stats.foulsAVG_away
-cards_against_away: stats.cards_against_away
+cards_against_home: stats.cardsAVG_home
+cards_against_away: stats.cardsAVG_away
+goals_scored_home: stats.seasonScoredNum_home
 goals_scored_away: stats.seasonScoredNum_away

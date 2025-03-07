@@ -1,0 +1,11 @@
+# Expected Goals (xG)
+home_goal_count: match.homeGoalCount
+away_goal_count: match.awayGoalCount
+total_goal_count: match.totalGoalCount
+home_xg: match.team_a_xg
+away_xg: match.team_b_xg
+total_xg: match.total_xg
+home_odds: match.odds_ft_1
+draw_odds: match.odds_ft_x
+away_odds: match.odds_ft_2
+

@@ -1,0 +1,9 @@
+total_corners: match.totalCornerCount
+home_shots: match.team_a_shots
+away_shots: match.team_b_shots
+home_possession: match.team_a_possession
+away_possession: match.team_b_possession
+home_fouls: match.team_a_fouls
+away_fouls: match.team_b_fouls
+home_cards: match.team_a_cards_num
+away_cards: match.team_b_cards_num
